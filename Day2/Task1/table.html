@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table tag</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: aliceblue;
+        }
+        table{
+            border: 2px solid gray;
+            background-color: gray;
+            margin-bottom: 50px;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+        }
+        th,td{
+            border: 1px solid white;
+            padding: 20px;
+            background-color: gray;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            background-color: gray;
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 12px;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+        }
+        .box{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <th rowspan="2"> ID NO.</th>
+        <th colspan="2">Full Name</th>
+        <th rowspan="2">Age</th>
+        <tr><th>first Name</th> <th>Last Name</th></tr>
+        
+        <tr>
+            <td>2000</td>
+            <td colspan="2">shaik younus</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>2001</td>
+            <td colspan="2">shaik noor</td>
+            <td>21</td>
+        </tr>
+        
+    </table>
+    <form action="post">
+        <div class="box">
+            <label>Name:</label> 
+        <input type="text" name="username" placeholder="Enter your name...." required>
+        </div>
+        <div class="box">
+            <label >Email : </label>
+            <input type="email" placeholder="Enter your email.." required>
+        </div>
+        <div class="box">
+            <label >Password : </label>
+            <input type="password"  required>
+        </div>
+        <div class="box">
+            <input type="checkbox"  required>
+            <label >Allow, the webpage to get access</label>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</body>
+
+</html>

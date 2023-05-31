@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+
+}
+div{
+    display: flex;
+
+    width: 200px;
+    height: 200px;
+    background: rgba(236, 31, 31, 0.557);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+}
+.b1:hover{
+    width: 200px;
+    height: 200px;
+    transition-duration: 2s;
+    transform: rotate(360deg);
+    background: #35866e;
+}
+.b2:hover{
+    transition-duration: 2s;
+    background:#35866e;
+}

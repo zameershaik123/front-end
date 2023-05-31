@@ -1,0 +1,39 @@
+.container{
+     height: 100vh;
+     background: url(/6dd4ffa036181246ee107c961b9c8abb.jpeg);
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.form{
+    border: 2px solid rgb(22, 85, 141);
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+label{
+    color: rgb(79, 159, 212);
+    padding: 10px;
+}
+input{
+    border: 1px solid rgb(22, 85, 141) ;
+    border-radius: 20px;
+    background-color: rgba(81, 241, 241, 0.55);
+}
+input:focus{
+    outline: none;
+    
+}
+div{
+    padding: 20px;
+}
+button{
+    padding: 10px;
+    border-radius:20px ;
+    background-color: rgb(22, 85, 141);
+    outline: none;
+    cursor: pointer;
+}

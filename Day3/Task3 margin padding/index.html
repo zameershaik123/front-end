@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 margin and padding</title>
+    <style>
+        .t{
+            background-color: rgb(120, 161, 54);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 300px;
+            border:2px dashed black;
+        }
+
+        div{
+            border: 3px solid black;
+            border-radius: 50%;
+            height: 50px;
+            width: 200px;
+            border: 20px groove;
+            
+        }
+        @keyframes frd {
+            
+            30%{
+                transform: rotate(360deg);
+            }
+            100%{
+                height: 60px;
+            }
+        }
+        @keyframes bak {
+            0%{
+                transform: rotate(-0deg);
+            }
+            50%{
+                transform: rotateX(90deg);
+                
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="r1" style="transform: skew(0); animation: frd 2s  infinite;"></div>
+    <div class="r2" style=" transform: skew(10deg,-20deg);animation: bak 2s  infinite;"></div>
+    <div class="r3" style="transform: skew(0); animation: frd 2s infinite;"></div>
+    <div class="r4" style="transform: skew(10deg,-20deg); animation: bak 2s infinite;"></div>
+    <div class="r5" style="transform: skew(0);animation: frd 2s infinite;"></div>
+    <div class="r4" style="transform: skew(10deg,-20deg); animation: bak 2s infinite;"></div>
+    <div class="r5" style="transform: skew(0);animation: frd 2s infinite;"></div>
+    <div class="r4" style="transform: skew(10deg,-20deg); animation: bak 2s infinite;"></div>
+    <div class="r5" style="transform: skew(0);animation: frd 2s infinite;"></div>
+    
+    
+
+</body>
+</html>
